@@ -1,0 +1,14 @@
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    background-color: lightgrey;
+}
+
+div{
+    background-color: gainsboro;
+    display: inline flex;
+}
