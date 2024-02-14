@@ -12,3 +12,8 @@ div{
     background-color: gainsboro;
     display: inline flex;
 }
+
+.ville{
+    display: flex;
+    justify-content: center;
+}

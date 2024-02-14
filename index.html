@@ -1,43 +1,46 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <script> function afficheVille() { alert(villeChoisie); }
-            let villeChoisie = "Niort" 
-            </script>
-        </head>
+<html>
 
-    <body onload="afficheVille()">
-        <header>
-            <p> TD n°1 Programmation web – Application météo </p> 
-        </header>
-        <div>
-            <div>
-                <h2>Niort</h2>
-                <p>12°, pluvieux </p>
-                <img src="pluvieux.png" width="5%"/>
-            </div>
-            
-            <div>
-                <h2>Banana</h2>
-                <p>25°, ifébô</p>
-                <img src="ensoleille.png" width="5%"/>
-            </div>
-            
-            <div>
-            <h2>Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch</h2>
-            <p>11°, orageux</p>
-            <img src="orageux.png" width="5%"/>
-            </div>
-    
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="td1.js"></script>
+</head>
 
+<body>
+    <header>
+        <p> TD n°1 Programmation web – Application météo </p>
+    </header>
+    <select id="ville" name="ville" onchange="afficheVille()">
+        <option value="Niort"> Niort</option>
+        <option value="Banana"> Banana</option>
+        <option value="Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch">
+            Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch</option>
+    </select>
+    <div>
+        <div id="Niort" class="ville">
+            <h2>Niort</h2>
+            <p>12°, pluvieux </p>
+            <img src="pluvieux.png" width="5%" alt="pluvieux" />
         </div>
 
-    </body>
-    
+        <div id="Banana" class="ville">
+            <h2>Banana</h2>
+            <p>25°, ifébô</p>
+            <img src="ensoleille.png" width="5%" alt="ensoleille" />
+        </div>
+
+        <div id="Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch" class="ville">
+            <h2>Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch</h2>
+            <p>11°, orageux</p>
+            <img src="orageux.png" width="5%" alt="orageux" />
+        </div>
+    </div>
+
     <footer>
         <p>CHAINE Maël</p>
-        <p> icônes météo : <a href https://thenounproject.com>the noun project</a> </p> 
+        <p> icônes météo : <a href="https://thenounproject.com">the noun project</a> </p>
     </footer>
+</body>
+
 </html>
